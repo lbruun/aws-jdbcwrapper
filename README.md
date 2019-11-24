@@ -30,7 +30,7 @@ is to add as a dependency to your project:
 <dependency>
     <groupId>net.lbruun.aws</groupId>
     <artifactId>aws-jdbc-wrapper</artifactId>  
-	<version> .. latest .. </version>
+    <version> .. latest .. </version>
 </dependency>
 ```
 
@@ -42,8 +42,8 @@ as follows:
 ``` xml
 <dependency>
     <groupId>net.lbruun.aws</groupId>
-    <artifactId>aws-jdbc-wrapper</artifactId>  
-	<version> .. latest .. </version>
+    <artifactId>aws-jdbc-wrapper-nodeps</artifactId>  
+    <version> .. latest .. </version>
 </dependency>
 ```
 
@@ -53,13 +53,13 @@ but in addition the library assumes that that your project provides:
 <dependency>
     <groupId>com.amazonaws</groupId>
     <artifactId>aws-java-sdk-core</artifactId>  
-	<version> ... </version>    <!-- AWS SDK v1  -->
+    <version> ... </version>    <!-- AWS SDK v1  -->
 </dependency>
 
 <dependency>
     <groupId>com.amazonaws</groupId>
     <artifactId>aws-java-sdk-rds</artifactId>
-	<version> ... </version>    <!-- AWS SDK v1 -->
+    <version> ... </version>    <!-- AWS SDK v1 -->
 </dependency>
 ```
 
