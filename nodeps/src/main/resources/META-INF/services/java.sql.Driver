@@ -1,0 +1,8 @@
+#
+# Registering JDBC wrappers
+#
+net.lbruun.aws.jdbc.AWSWrappedJDBCDriverMSSQL
+net.lbruun.aws.jdbc.AWSWrappedJDBCDriverMySQL
+net.lbruun.aws.jdbc.AWSWrappedJDBCDriverMySQLpre8
+net.lbruun.aws.jdbc.AWSWrappedJDBCDriverOracle
+net.lbruun.aws.jdbc.AWSWrappedJDBCDriverPostgreSQL
