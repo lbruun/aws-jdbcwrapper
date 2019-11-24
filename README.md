@@ -74,17 +74,17 @@ The library is meant to be non-instrusive.
 
 In your JDBC configuration, do the following:
 
-- Change your driver class name into one of the values from the 
+1. Change your driver class name into one of the values from the 
   table in the 'Supported JDBC Drivers' section of this document, 
   depending on which database you use.
-- Change your JDBC URL so that you insert the text `awswrapper-` right
+1. Change your JDBC URL so that you insert the text `awswrapper-` right
   after the first colon. For example the url `jdbc:postgresql://myhost:5432/mydb`
   would become: `jdbc:awswrapper-postgresql://myhost:5432/mydb`
-- Change the database username value so that you prefix it with
+1. Change the database username value so that you prefix it with
   `awswrapper:<authtype>:` where `<authtype>` is a value from the table
   below. For example the username value "mydbuser" may become "awswrapper:iam:mydbuser"
   indicating that you wish to use AWS IAM authentication.
-- Add properties to your JDBC connection setup as per the table below.
+1. Add properties to your JDBC connection setup as per the table below.
 
 #### Authentication types
 
