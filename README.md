@@ -1,4 +1,4 @@
-# AWS JDBC Wrapper Library
+# AWS JDBC Wrapper Library (beta)
 
 The **AWS JDBC Wrapper Library** is a non-intrusive JDBC wrapper
 which supports AWS-specific authentication methods when connecting
@@ -105,10 +105,11 @@ In your JDBC configuration, do the following:
 | `aws.jdbc.db.username` | No        | DB username to connect with. Normally not required to be set with a separate key like this. The library will look first for a property named 'user' or 'username'. |
 | `aws.jdbc.db.region`   | No        | AWS Region where the DB instance is running, e.g. `eu-central-1`. If executing on an EC2 instance in the same region as the database, then you can leave this out as the library can figure out this value on its own. |
 
-Some of this is indeed duplicate information because some of this is likely 
-already defined in the JDBC URL. However, the library is not yet clever
-enough to derive this information from the JDBC URL .. it therefore needs it
-explicitly.
+Some of this is indeed duplicate information because it may already be defined 
+in the JDBC URL. However, the library is not yet clever enough to derive this 
+information from the JDBC URL .. it therefore needs it explicitly.
+
+
 
 
 ## Supported JDBC Drivers
