@@ -4,7 +4,7 @@
     <artifactId>aws-jdbc-wrapper-parent</artifactId>
     <packaging>pom</packaging>
     <name>AWS JDBC Wrapper Library (parent)</name>
-    <version>0.9.1-SNAPSHOT</version>
+    <version>0.9.1</version>
     <url>https://github.com/lbruun/aws-jdbcwrapper</url>
  
     <description>
@@ -32,7 +32,7 @@
         <connection>scm:git:https://github.com/lbruun/aws-jdbcwrapper.git</connection>
         <developerConnection>scm:git:https://github.com/lbruun/aws-jdbcwrapper.git</developerConnection>
         <url>https://github.com/lbruun/aws-jdbcwrapper</url>
-      <tag>HEAD</tag>
+      <tag>aws-jdbc-wrapper-parent-0.9.1</tag>
   </scm>    
     
     
