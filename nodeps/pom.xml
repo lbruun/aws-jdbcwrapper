@@ -9,6 +9,11 @@
     <packaging>jar</packaging>
     <name>AWS JDBC Wrapper Library (no deps)</name>
 
+    <description>
+        Non-intrusive JDBC wrapper which supports AWS-specific authentication 
+        methods when connecting to database. This edition has no transitive
+        dependencies.
+    </description>
 
 
     <dependencyManagement>

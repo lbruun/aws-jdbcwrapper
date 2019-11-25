@@ -5,8 +5,13 @@
     <packaging>pom</packaging>
     <name>AWS JDBC Wrapper Library (parent)</name>
     <version>0.9.1-SNAPSHOT</version>
-
-
+    <url>https://github.com/lbruun/aws-jdbcwrapper</url>
+ 
+    <description>
+        Non-intrusive JDBC wrapper which supports AWS-specific authentication 
+        methods when connecting to database. 
+    </description>
+    
     <organization>
         <name>lbruun.net</name>
         <url>https://lbruun.net</url>
@@ -26,7 +31,7 @@
              with the same id as the hostname in the URL below.           -->
         <connection>scm:git:https://github.com/lbruun/aws-jdbcwrapper.git</connection>
         <developerConnection>scm:git:https://github.com/lbruun/aws-jdbcwrapper.git</developerConnection>
-        <url>https://github.com/lbruun/aws-eb-packager</url>
+        <url>https://github.com/lbruun/aws-jdbcwrapper</url>
       <tag>HEAD</tag>
   </scm>    
     
@@ -78,6 +83,32 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>2.4</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.10.4</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>                   
                 </plugins>
             </build>
         </profile>

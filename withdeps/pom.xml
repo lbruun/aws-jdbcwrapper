@@ -9,17 +9,17 @@
     <packaging>jar</packaging>
     <name>AWS JDBC Wrapper Library</name>
 
+    <description>
+        Non-intrusive JDBC wrapper which supports AWS-specific authentication 
+        methods when connecting to database. This edition includes
+        transitive dependencies.
+    </description>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-        </license>
-    </licenses>
 
     <dependencyManagement>
         <dependencies>
@@ -55,10 +55,5 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
-
-
     </dependencies>
-
-
 </project>
